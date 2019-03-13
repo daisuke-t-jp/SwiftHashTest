@@ -1,3 +1,3 @@
 # SwiftHashTest
 
-A description of this package.
+Hash algorithm test in Swift.
