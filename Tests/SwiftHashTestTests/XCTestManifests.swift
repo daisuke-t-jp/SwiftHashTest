@@ -2,8 +2,8 @@ import XCTest
 
 #if !os(macOS)
 public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(SwiftHashTestTests.allTests),
-    ]
+  return [
+      testCase(SwiftHashTestTests.allTests),
+  ]
 }
 #endif
