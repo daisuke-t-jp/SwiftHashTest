@@ -13,14 +13,14 @@ final class SwiftHashTestTests: XCTestCase {
     
     print("tearDown")
   }
-
+  
   // https://github.com/krzyzanowskim/CryptoSwift/
   func testCryptoSwiftMD5Performance() throws {
     self.measure {
       _ = Digest.md5(vector)
     }
   }
-
+  
   func testCryptoSwiftSHA1Performance() throws {
     self.measure {
       _ = Digest.sha1(vector)
@@ -78,7 +78,7 @@ final class SwiftHashTestTests: XCTestCase {
       _ = MurmurHash3.x86_32.digest(vector)
     }
   }
-
+  
   func testMurmurHash3_x86_128Performance() throws {
     self.measure {
       _ = MurmurHash3.x86_128.digest(vector)
@@ -90,7 +90,7 @@ final class SwiftHashTestTests: XCTestCase {
       _ = MurmurHash3.x64_128.digest(vector)
     }
   }
-
+  
   
   // https://github.com/daisuke-t-jp/xxHash-Swift/
   func testXXHash32Performance() throws {
